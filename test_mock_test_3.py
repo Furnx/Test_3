@@ -63,12 +63,12 @@ def test_unique_ingredients():
 def test_student_average():
     gradebook = {
         "Lerato": [50, 60, 70],      # Avg 60.0
-        "Bongani": [80, 85, 90],     # Avg 85.0
+        "Limpho": [80, 85, 90],     # Avg 85.0
         "Sipho": [55, 65, 55, 65]    # Avg 60.0
     }
     expected = {
         "Lerato": 60.0,
-        "Bongani": 85.0,
+        "Limpho": 85.0,
         "Sipho": 60.0
     }
     assert practice.student_average(gradebook) == expected
